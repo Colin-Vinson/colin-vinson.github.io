@@ -3,27 +3,34 @@ img {
     height: 300px;
 }
 .myFirstDiv{
-    color: rgba(255, 255, 255, 0.5);
-    padding: 15px 20px 25px 10px;
+    color: rgb(255, 255, 255);
+    padding: 25px 20px 25px 20px;
     margin: 20px 150px 20px 150px;
-    border: 2px solid rgb(99, 59, 122);
-    background-color: rgba(152, 5, 152, 0.5);
+    border: 2px solid rgb(48, 0, 76);
+    background-color: rgba(119, 179, 197, 0.5);
     justify-content: center;
 }
 
 .mySecondDiv{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    color: rgba(255, 255, 255, 0.5);
+    color: rgb(255, 255, 255);
     padding: 5px;
     margin: 5px;
-    border: 1em solid rgb(4, 0, 7);
-    background-color: rgb(6, 0, 0);
+    border: .5em solid rgb(4, 0, 7);
+    background-color: rgb(255, 0, 0);
     background-image: url(/images/red_background.jpg);
     background-size: cover;
     text-align: center;
+
 }
-.myThirdDiv{
+.myFirstFlexbox{
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     text-align: center;
+    align-items: center;
+    padding: .5em;
 }
+
+
+
+
