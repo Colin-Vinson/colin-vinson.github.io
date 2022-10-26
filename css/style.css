@@ -1,8 +1,60 @@
+html, body{ /* ny */
+    margin:0px;
+    padding:0px;
+}
+
+.nav{
+    /* position: absolute;
+    margin: 10px; */
+    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(to right, rgb(212, 212, 212) , rgb(0, 0, 0)); /* ny */
+}
+
+.nav ul{
+    margin: 0;
+}
+
+.nav li{
+    display: inline;
+}
+
+.nav a{
+    display: inline-block;
+    color: rgb(236, 190, 10);
+    padding: 0.5em;
+    text-decoration: none;  /* ny */
+}
+
+.nav a:hover{
+    background-color: rgba(125, 240, 240, 0.8);
+}
+
+.main-nav{
+    position: fixed;    /* ny */
+    width: 100%;    /* ny */
+    text-align: right;  /* endret */
+    font-size: 1em;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.utplassing-nav{
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+/* .fixed {
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
+
 #welcome-section{
-    background-image: url(/images/banner_image.jpg);
-    background-size: cover;
-    color: cornsilk;
-    height: 8em;
+    background-image: url(/images/engineering_background.jpg);
+    background-size: 100% 100%; /* endret */
+    color: rgb(236, 190, 10);
+    height: 100vh; /* endret */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,12 +65,94 @@
     font-size: 3em;
 }
 
-.nav{
-    position: fixed;
-    margin: 10px;
-    border: 2px sold rgba(0, 0,0, 1.0);
+/* utviklet */
+#about{
+    display: grid;
+    grid-template-areas:
+    'header header header'
+    'picture main main';
+
+    height: 100vh;
+    margin: 2em 10em 0 10em;
 }
 
-.nav li{
+.section-header{
+    grid-area: header;
+    font-size: 2em;
+    color: rgb(0, 0, 0);
+    font-family: Papyrus;
+    font-weight: bold;
+    text-align: center;
+}
+
+.about-image{
+    grid-area: picture;
+    float: left;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin: 15px;
+}
+
+.about-content{
+    grid-area: main;
+    font-family: sans-serif;
+    font-size: 1em;
+    
+}
+
+#projects{
+    margin-top: 2em;
+    display: flex;
+    flex-direction: column;
+}
+
+.project1{
+    display: flex;
+}
+
+.project2{
+    display: flex;
+}
+
+.project3{
+    display: flex;
+}
+
+#footer{
+    background-color: rgb(0, 0, 0);
+    background-image: linear-gradient(to right, rgb(212, 212, 212) , rgb(0, 0, 0)); /* ny */
+}
+
+#footer ul{
+    margin: 0;
+}
+
+#footer li{
     display: inline;
+}
+
+#footer a{
+    display: inline-block;
+    color: rgb(236, 190, 10);
+    padding: 0.5em;
+    text-decoration: none;  /* ny */
+}
+
+#footer a:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.main-footer{
+    width: 100%;
+    text-align: left;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+
+.utplassing-footer{
+    text-align: left;
+    font-size: 1.5em;
+    font-weight: bold;
 }
