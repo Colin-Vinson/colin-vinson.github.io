@@ -20,7 +20,7 @@ html, body{
     display: inline-block;
     color: rgb(236, 190, 10);
     padding: 0.5em;
-    text-decoration: none;  /* ny */
+    text-decoration: none;
 }
 
 .nav a:hover{
@@ -28,9 +28,9 @@ html, body{
 }
 
 .main-nav{
-    position: fixed;    /* ny */
-    width: 100%;    /* ny */
-    text-align: right;  /* endret */
+    position: fixed;    
+    width: 100%;    
+    text-align: right; 
     font-size: 1em;
     font-weight: bold;
     font-family: sans-serif;
@@ -42,17 +42,11 @@ html, body{
     font-weight: bold;
 }
 
-/* .fixed {
-    position: fixed;
-    top: 0;
-    width: 100%;
-} */
-
 #welcome-section{
     background-image: url(/images/engineering_background.jpg);
-    background-size: 100% 100%; /* endret */
+    background-size: 100% 100%;
     color: rgb(236, 190, 10);
-    height: 100vh; /* endret */
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -132,7 +126,7 @@ html, body{
     display: inline-block;
     color: rgb(236, 190, 10);
     padding: 0.5em;
-    text-decoration: none;  /* ny */
+    text-decoration: none;
 }
 
 #footer a:hover{
